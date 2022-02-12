@@ -17,22 +17,21 @@ const Home = () => {
 
   const [counter, setCounter] = useState(1);
 
-  const getData = (name, counter) => dispatch(handleFetchInitialMovies(name, counter));
-
+  
   const handleClick = () => {
     setCounter(cnt => cnt + 1);
-    getData('fantasy', counter);
   }
-
+  
   useEffect(() => {
-    if (initialMovies.length === 0) {
-      getData('fantasy', counter);
-    }
-  }, [counter, getData, initialMovies]);
+    // get more movies from the server
+    dispatch(handleFetchInitialMovies('fantasy', counter))
+
+  }, [counter, dispatch]);
 
   if (!initialMovies) {
     return <NotFound />
   }
+
   return (
     <div>
       <h1 className="my-5 py-3 text-muted text-center border border-3 shadow">Top Watched</h1>
