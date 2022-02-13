@@ -2,6 +2,8 @@
 `owner`\
 this project is made by Moataz Bahaa
 
+## you can see project live [here](https://moataz-bahaa.github.io/movie-info)
+
 ## libraries && technologies
   `HTML`
   `CSS`

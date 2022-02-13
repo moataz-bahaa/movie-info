@@ -4,13 +4,13 @@ const Spinner = () => {
   return (
     <div>
       <img
-        src="imgs/spinner.gif"
+        src='imgs/spinner.gif'
         style={{
           width: '250px',
           margin: 'auto',
-          display: 'block'
+          display: 'block',
         }}
-        alt="Loading...."
+        alt='Loading....'
       />
     </div>
   );

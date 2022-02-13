@@ -39,7 +39,7 @@ const App = () => {
       <ScrollToTop />
       <NavBar />
       <div className='container padding-y-150' style={{ minHeight: '90vh' }}>
-        <Switch>
+        <Switch>pa
           <PrivateRoute user={user} exact path='/' component={Home} />
           <PrivateRoute user={user} exact path='/search' component={Search} />
           <PrivateRoute user={user} exact path='/movie/:id' component={Movie} />
